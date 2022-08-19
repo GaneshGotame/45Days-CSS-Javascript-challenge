@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo elements</title>
+    <style>
+        h1{
+            background-color: blue;
+            color:whitesmoke;
+
+        }
+        h1::after{
+            content:'World';
+
+        }
+        h1::before{
+            content: 'Hello';
+        }
+        p{
+            font-size:25px;
+        }
+        #first::first-line{
+            color:red;
+        }
+        #first::first-letter{
+            font-size:50px;
+        }
+        #first::selection{
+            background-color: greenyellow;
+        }
+        #second::selection{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Adding the contents before and after elements</h1>
+    <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptas libero, sed dolorum excepturi repellat beatae placeat quod incidunt maxime iste inventore dolores omnis soluta sint optio explicabo aspernatur praesentium.</p>
+    <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptas libero, sed dolorum excepturi repellat beatae placeat quod incidunt maxime iste inventore dolores omnis soluta sint optio explicabo aspernatur praesentium.</p>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>focus pseudo class</title>
+    <style>
+        .form input:focus{
+            border:3px solid red;
+           outline:none;
+
+        }
+        .form input:checked{
+            width:40px;
+            height:20px;
+        }
+        .form input:disabled{
+            border:3px solid indigo;
+            outline:none;
+        }
+        .paragraph p:first-child{
+            background-color: yellow;
+            font-size:30px;
+
+        }
+        .paragraph p:last-child{
+            background-color: rgb(234, 36, 188);
+            font-size:35px;
+
+        }
+        .paragraph p:nth-child(3){
+            background-color: rgb(90, 138, 168);
+            font-size:35px;
+            color:whitesmoke;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+    <form action="#">
+        Name:<input type="text"><br>
+        Check:<input type="checkbox"><br>
+        You can't write here<input type="text" disabled>
+    </form>
+</div>
+<div class="paragraph">
+    <p>This is first Child.//first-child{styles}</p>
+    <p>This is second Child.</p>
+    <p>This is third Child.//nth-child(3){styles}</p>
+    <p>This is fouth Child.</p>
+    <p>This is last Child.//last-child{styles}</p>
+</div>
+
+</body>
+</html>
