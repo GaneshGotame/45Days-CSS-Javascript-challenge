@@ -1,0 +1,156 @@
+body{
+    margin:0px;
+    background: url("learner.jpg");
+    background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: center;
+ 
+    /* background:#222; */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400px;
+    text-transform: uppercase;
+}
+h2{
+    color:indigo;
+    font-size: 2em;
+}
+/* .content{
+    height:200vh;
+    background-color: #333;
+} */
+
+/*navigation styles starts here*/
+header{
+    background-color: rgb(8, 217, 67);
+    text-align: center;
+    width:100%;
+    position:fixed;
+}
+nav{
+    position:absolute;
+    text-align: left;
+    top:100%;
+    left:0;
+    background-color: rgb(8, 217, 67);
+    width: 100%;
+    transform:scale(1,0);
+    transform-origin: top;
+    transition:transform 250ms ease-in-out 250ms;
+}
+nav ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+nav li{
+    margin-left:1em;
+    margin-bottom:1em;
+}
+
+nav a{
+    color:whitesmoke;
+    text-decoration: none;
+    font-size:1.2rem;
+    text-transform: uppercase;
+    opacity:0;
+}
+
+nav a:hover{
+    color:black;
+}
+.checknav:checked ~ nav{
+   transform: scale(1,1);
+}
+
+.checknav{
+    display: none;
+}
+
+.checknav-label{
+    position:absolute;
+    top:0;
+    left:0;
+    margin-left:1em;
+    display:flex;
+    align-items: center;
+    height: 100%;
+}
+
+.checknav-label span,
+.checknav-label span::before,
+.checknav-label span::after{
+    display:block;
+    height:2px;
+    width:2em;
+    background: white;
+    border-radius: 2px;
+    position:relative;
+}
+
+.checknav-label span::before,
+.checknav-label span::after{
+ content:'';
+ position:absolute;
+}
+
+.checknav-label span::before{
+    bottom:7px;
+}
+.checknav-label span::after{
+    top:7px;
+}
+
+.checknav:checked ~ nav a{
+    opacity:1;
+    transition:transform 150ms ease-in-out;
+}
+
+@media screen and (min-width:800px){
+    .checknav-label{
+        display:none;
+    }
+    header{
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px,3fr) 1fr;
+    }
+    .logo{
+        grid-column: 2/3;
+    }
+    nav{
+        all:unset;
+        grid-column: 3/4;
+        display: flex;
+        justify-content:flex-end;
+        align-items: center;
+    }
+    nav a{
+        opacity: 1;
+        position:relative;
+    }
+    nav a::before{
+        content:'';
+        display: block;
+        height: 5px;
+        background-color: black;
+        position:absolute;
+        top:-.75em;
+        left:0;
+        right:0;
+        transform:scale(0,1);
+        transition:transform ease-in-out 250ms;
+    }
+    nav a:hover::before{
+        transform:scale(1,1);
+    }
+    nav ul{
+        display:flex;
+        justify-content: flex-end;
+    }
+    nav li{
+        margin-left: 3em;
+        margin-bottom:0;
+    }
+}
+

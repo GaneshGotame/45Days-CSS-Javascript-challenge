@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu dropdown</title>
+    <style>
+        body{
+            background-image:url("earth.jpg");
+            background-repeat: no-repeat;
+            background-size:cover;
+            height: 90vh;
+            background-position: center;
+
+            
+        }
+        .dropdown{
+            width:80%;
+            height:100px;
+            margin:0px auto;
+
+        }
+        .dropdown ul{
+            padding:0;
+        }
+
+        .dropdown ul li{
+            float:left;
+            background-color: whitesmoke;
+            color:blue;
+            width:200px;
+            list-style:none;
+            height:50px;
+            line-height:50px;
+            font-size: 25px;
+            text-align: center;
+            opacity: 0.65;
+            margin:2px;
+            border-radius: 10px; 
+       }
+       .dropdown ul li:hover{
+        background-color: rgb(93, 171, 226);
+        opacity: 1;
+       }
+
+       .dropdown ul li:hover>
+        ul{
+            display:block;
+       }
+       .dropdown ul li ul li{
+        position:relative;
+       }
+
+       .dropdown ul li ul li ul{
+        position:absolute;
+        left:200px;
+        top:0px;
+       }
+
+       .dropdown ul li ul li:hover>
+       ul{
+        display: block;
+       }
+
+    
+
+        .dropdown ul li ul{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <ul>
+            <li>Asia
+                <ul>
+                    <li>Nepal
+                        <ul>
+                            <li>Darchula</li>
+                            <li>Bhaktapur</li>
+                            <li>Illam</li>
+                        </ul>
+                    </li>
+                    <li>India</li>                   
+                    <li>Japan</li>
+                    <li>China
+                        <ul>
+                            <li>Luoyang</li>
+                            <li>Wuhan</li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Europe</li>
+            <li>Africa
+                <ul>
+                    <li>Nigeria</li>
+                    <li>Kenya</li>
+                </ul>
+            </li>
+            <li>North America</li>
+            <li>South America</li>
+            
+        </ul>
+    </div>
+    
+</body>
+</html>
