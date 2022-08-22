@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax effect</title>
+    <link rel="stylesheet" href="parallax.css">
+</head>
+<body>
+  <section>
+    <img src="forest.jpg" id="first">
+    <img src="manfrontpng.png" id="last">
+    <h1 id="text">Parallax</h1>
+  
+  </section>
+  <header class="bg-light">
+    <p>Lorem, ipsum dolor.</p>
+    <h1 class="text-center">Responsive layout Basics</h1>
+</header>
+<section class="bg-dark">
+    <div class="container container--narrow">
+    <h2>Quality Design</h2>
+    <div class="split">
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dolore, cupiditate voluptatibus, praesentium natus dignissimos vel fuga aliquid placeat omnis architecto quo temporibus illo harum?</p><br>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dolore, cupiditate voluptatibus, praesentium natus dignissimos vel fuga aliquid placeat omnis architecto quo temporibus illo harum?</p><br>
+    </div>
+   
+    <div>
+        <p>Est suscipit rerum dolorem aliquid quis molestias sit cupiditate, cumque consequatur repudiandae labore adipisci ad dolorum nam magni. Officia vero saepe explicabo esse totam voluptatum.</p>
+    </div>    
+    </div>
+</div>
+</section>
+
+
+<section class="bg-primary">
+    <div class="container">
+    <div class="split">
+        <div>
+            <h2>Make custom for your</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, odit quasi voluptates iste nulla eius!</p>
+        </div>
+        <div>
+          <img src="mount2.jpg" alt="mountain range in Europe">  
+        </div>
+    </div>
+</div>
+</section>
+
+<section class="bg-secondary">
+    <div class="container">
+    <div class="split">
+        <div> <img src="mount1.jpg" alt="mountain river"> </div>
+        <div>
+            <h2>Created With Care</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio ab sit id aliquam iusto est? Unde, dolor possimus distinctio, ipsa dolorum ducimus at amet, sunt dignissimos consectetur quas reprehenderit voluptas!</p>
+        </div>
+    </div>
+</div>
+</section>
+
+  <script>
+    let first=document.getElementById("first");
+    let last=document.getElementById("last");
+    let text=document.getElementById("text");
+
+    window.addEventListener('scroll',function(){
+      var value=window.scrollY;
+      first.style.top=value*0.7+'px';
+      last.style.bottom=value*0.5+'px';
+      text.style.top=value*1+'px';
+    })
+
+
+  </script>
+</body>
+</html>
