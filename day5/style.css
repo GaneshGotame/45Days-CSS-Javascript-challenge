@@ -1,0 +1,100 @@
+body{
+    background-color: white;
+}
+
+
+
+.container{
+    margin: 140px 0px 0px 150px;
+}
+.container .change label{
+    position:absolute;
+    top:40px;
+    left:600px;
+    width: 45px;
+    height: 27px;
+    border:2px solid;
+    border-radius: 20px;
+}
+
+.container .change label:before{
+    position:absolute;
+    content: "";
+    width: 20px;
+    left:2px;
+    top:3px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000;
+    transition: 0.4s;
+}
+.container .change label.active:before{
+    left:24px;
+    background: #fff;  
+
+}
+body.night{
+    background: black;
+    color:#fff;
+}
+.row{
+    width:100%;
+    height:55px;
+}
+.container .one{
+    width:100%;
+    margin:10px 0 0 0;
+}
+.one button{
+    height: 30px;
+    width: 52px;
+}
+.two,.three,.four,.five,.six{
+    margin:10px 0 0 0;
+}
+.size1{
+    
+    width: 120px;
+    border-radius: 10%;
+}
+.last{
+    
+    width: 55px;
+    border-radius: 20%;
+}
+.size3{
+    width: 87px;
+    border-radius: 15%;
+}
+.size4{
+    width:113px;
+    border-radius: 11%;
+}
+.size5{
+    width: 145px;
+    border-radius: 8%;
+}
+
+
+.space{
+    width: 380px;
+    border-radius: 4%;
+}
+
+
+button{
+    color:black;
+    width:55px;
+    height:55px;
+    border:none;
+    background: white;
+    box-shadow:5px 5px 10px black,-5px -5px 10px white;
+    border-radius: 20%;
+    font-size: 18px;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button:active{
+    box-shadow:1px 1px 2px white,-1px -1px 2px black;
+}
