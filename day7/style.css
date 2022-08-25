@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(212, 210, 210);
+}
+
+.swiper{
+    width: 950px;
+}
+section .card .image{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding:3px;
+    background:purple;
+}
+section .card .image img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border:3px solid #fff;
+}
+
+.card{
+    position: relative;
+    background:#fff;
+    border-radius: 20px;
+    margin:20px 0;
+    width: 280px;
+}
+.card::before{
+    content: "";
+    position:absolute;
+    height: 40%;
+    width:100%;
+    background: purple;
+    border-radius:20px 20px 0 0;
+}
+
+.card .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:30px;
+   position: relative;
+   z-index: 100;
+}
+.card .name-pro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    color:#333;
+}
+.name-pro .type{
+  
+    font-size:20px;
+    font-weight: 600;
+}
+.name-pro .name{
+    font-size:15px;
+    font-weight: 500;
+}
+.card .rating{
+    display: flex;
+    align-items: center;
+    margin-top:18px;
+}
+
+.card .rating i{
+    color:purple;
+    font-size: 18px;
+    margin:0 2px;
+
+}
+
+.card .button{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top:20px;
+}
+
+.card .button button{
+    background: purple;
+    outline:none;
+    border:none;
+    color:#fff;
+    padding:8px 22px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.button button:hover{
+    background: rgb(69, 2, 69);
+}

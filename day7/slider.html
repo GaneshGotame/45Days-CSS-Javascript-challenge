@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image slider</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <section>
+    <div class="swiper mySwiper container">
+        <div class="swiper-wrapper content">
+            <div class="swiper-slide card">
+                <div class="card-content">
+                    <div class="image">
+                        <img src="f3.jpg" alt="">
+                    </div>
+
+                    <div class="name-pro">
+                        <span class="type">Blue flower</span>
+                        <span class="name">Nigella</span>
+
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="button">
+                       <button class="about">About</button>
+                       <button class="buy">Buynow</button>
+                      
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide card">
+                <div class="card-content">
+                    <div class="image">
+                        <img src="f4.jpg" alt="">
+                    </div>
+
+                    <div class="name-pro">
+                        <span class="type">Pink flower</span>
+                        <span class="name">Dahlia</span>
+
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="button">
+                       <button class="about">About</button>
+                       <button class="buy">Buynow</button>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide card">
+                <div class="card-content">
+                    <div class="image">
+                        <img src="f2.jpg" alt="">
+                    </div>
+
+                    <div class="name-pro">
+                        <span class="type">Blue Flower</span>
+                        <span class="name">Searching</span>
+
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="button">
+                       <button class="about">About</button>
+                       <button class="buy">Buynow</button>
+                      
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="swiper-slide card">
+                <div class="card-content">
+                    <div class="image">
+                        <img src="f6.jpg" alt="">
+                    </div>
+
+                    <div class="name-pro">
+                        <span class="type">Flower</span>
+                        <span class="name">Searching</span>
+
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="button">
+                       <button class="about">About</button>
+                       <button class="buy">Buynow</button>
+                      
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide card">
+                <div class="card-content">
+                    <div class="image">
+                        <img src="f5.jpg" alt="">
+                    </div>
+
+                    <div class="name-pro">
+                        <span class="type">Red Flower</span>
+                        <span class="name">Dahlia</span>
+
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="button">
+                       <button class="about">About</button>
+                       <button class="buy">Buynow</button>
+                      
+                    </div>
+                </div>
+            </div>
+
+
+            
+        </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+</section>
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script>
+   var swiper = new Swiper(".mySwiper", {
+     slidesPerView: 3,
+     spaceBetween: 30,
+     slidesPerGroup: 3,
+     loop: true,
+     loopFillGroupWithBlank: true,
+     pagination: {
+       el: ".swiper-pagination",
+       clickable: true,
+     },
+     navigation: {
+       nextEl: ".swiper-button-next",
+       prevEl: ".swiper-button-prev",
+     },
+   });
+ </script>
+</body>
+</html>
