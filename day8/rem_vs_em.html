@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rem Vs Em</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        html{
+            font-size:10px;
+        }
+       header{
+        text-align: center;
+        padding:50px;
+        background:coral;
+       }
+       header h1{
+        font-size:3em;
+
+       }
+       .em{
+        font-size: 15px;
+        background: rgb(95, 95, 247);
+        margin-bottom: 10px;
+       }
+       .em h1{
+        margin-left:2em;
+        font-size: 2em;
+       
+       }
+       .em p{
+        font-size:2em;
+       }
+
+       .rem{
+        font-size: 12px;
+        background: rgb(70, 237, 132);
+        margin-bottom: 10px;
+       }
+       .rem h1{
+        font-size: 3rem;
+        margin-left:3rem;
+       }
+       .rem p{
+        font-size:2em;
+       }
+       .pixel{
+        background: rgb(180, 94, 241);
+       }
+       .pixel h1{
+        margin-left:30px;
+        font-size: 35px;
+       }
+       .pixel p{
+        font-size: 20px;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to my Day 8</h1>
+    </header>
+       <div class="em">
+        <h1>Using em</h1>
+        <p>The default value of em is 16px.<br>
+            It is relative to the parent's font.
+        </p>
+       </div>
+    <div class="rem">
+        <h1>Using rem</h1>
+        <p>The default value of rem is also 16px.<br>
+            It is relative to root of html.<br>
+            Root of html can be changed by writing below syntax inside style<br>
+            html{
+                font-size:10px;//changing the default of Rem i.e 1rem=10px;
+            }
+            
+        </p>
+    </div>
+    <div class="pixel">
+        <h1>Using pixel</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, animi?</p>
+    </div>
+</body>
+</html>
