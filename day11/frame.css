@@ -1,0 +1,52 @@
+.container{
+    
+    background: greenyellow;
+    height:500px;
+   
+
+}
+
+.box{
+    background-color: green;
+    height: 250px;
+    width:250px;
+    font-size:25px;
+    position:relative;
+    /* animation-name:ganesh; */
+    animation-name:ganesh1;
+    animation-duration: 4s;
+    /*
+    animation-iteration-count:1;
+    animation-fill-mode:alternate;
+    animation-timing-function:ease-out; */
+ 
+}
+@keyframes ganesh1{
+    0%{
+        top:0px;
+        bottom:0px;
+    }
+    25%{
+        top:250px;
+        left:0px;
+
+    }
+    75%{
+        top:250px;
+        left:250px;
+
+    }
+    100%{
+        top:0px;
+        left:250px;
+
+    }
+}
+@keyframes ganesh{
+    from {
+        width:200px;
+    }
+    to{
+        width:1200px;
+    }
+}
