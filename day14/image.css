@@ -1,0 +1,33 @@
+.image-grid{
+    display: flex;
+    width:90%;
+    margin:0 auto;
+    flex-wrap:wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(158, 239, 239);
+}
+.grid-image{
+    display: block;
+    flex-basis: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    
+}
+@media only screen and (min-width:700px){
+    .grid-image{
+        flex-basis: 50%;
+    
+    }
+}
+@media only screen and (min-width:1050px){
+    .grid-image{
+        flex-basis: 33.33%;
+    }
+}
+@media only screen and (min-width:1300px){
+    .grid-image{
+        flex-basis: 20%;
+    }
+}
