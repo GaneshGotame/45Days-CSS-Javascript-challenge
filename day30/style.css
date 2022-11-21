@@ -1,0 +1,42 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+
+    background-color: aqua;
+}
+.container{
+    height: 250px;
+    width: 500px;
+    background-color:rgb(78, 247, 247);
+    border-radius: 20px;
+    box-shadow: 5px 1px 5px 2px black;
+  
+}
+.container h2{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 35px;
+    color:rgb(103, 103, 250);
+}
+
+.digital{
+
+    font-size: 40px;
+   margin-left: 170px;
+   color:rgb(65, 65, 179);
+}
+
+#days ul li{
+    display: flex;
+    float: left;
+    margin-left: 20px;
+    padding-left: 5px;
+    font-size: 20px;
+    /* font-weight: bold; */
+
+}
+#days ul li:last-child{
+    color:red;
+}
